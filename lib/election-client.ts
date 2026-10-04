@@ -47,7 +47,9 @@ export function validateSelection(input:unknown):Selection{
   if(s.country!=="all"&&!COUNTRIES.some(c=>c.code===s.country))throw new Error("País inválido.");
   if(s.continent!=="all"&&!["Américas","Europa","Ásia","África","Oceania"].includes(s.continent))throw new Error("Continente inválido.");
   if(s.city!=="all"&&!geography.cities.some(c=>c.code===s.city))throw new Error("Cidade inválida.");
-  if(s.scope!=="brasil")s.office="1";
+  if(s.scope!=="brasil"&&s.office!=="1"){
+    s.scope="brasil";s.country="all";s.city="all";s.continent="all";
+  }
   if(s.office==="8"){s.uf="df";s.office="7";}
   if(s.office!=="1"&&s.uf==="all")s.uf="sp";
   if(s.city!=="all"){const c=geography.cities.find(c=>c.code===s.city)!;s.country=c.countryCode;s.continent=c.continent;}

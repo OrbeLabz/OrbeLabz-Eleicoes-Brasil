@@ -1,6 +1,10 @@
-# OrbeLabz · Eleições Brasil
+# OrbeLabz - Apuração
 
 Painel público em tema escuro com resultados oficiais do TSE para o Brasil e os brasileiros que votam no exterior. Inclui estados, países, continentes e localidades eleitorais; a seleção Américas reúne as localidades eleitorais do continente.
+
+A seleção de governador, senador e deputados abre a aba Brasil e permite escolher o estado. Na presidência, a ordem de exibição personalizada coloca Flávio Bolsonaro e Lula primeiro; os dados e os votos permanecem oficiais.
+
+Paleta da marca: preto espacial `#090B14`, azul-marinho `#0E1B3D`, azul elétrico `#3B82F6`, ciano `#22D3EE` e violeta `#8B5CF6`.
 
 ## Atualização dos resultados
 
